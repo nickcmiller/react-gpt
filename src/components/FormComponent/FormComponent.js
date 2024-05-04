@@ -13,12 +13,12 @@ function FormComponent() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className="form" onSubmit={handleSubmit}>
+      <label className="input">
         Name:
         <input type="text" value={inputValue} onChange={handleChange} />
       </label>
-      <input type="submit" value="Submit" />
+      <input className="submit" type="submit" value="Submit" />
     </form>
   );
 }
