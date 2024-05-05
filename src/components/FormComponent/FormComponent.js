@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './FormComponent.css';
 
 function FormComponent() {
   const [inputValue, setInputValue] = useState('');
@@ -14,10 +15,12 @@ function FormComponent() {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <label className="input">
-        Name:
-        <input type="text" value={inputValue} onChange={handleChange} />
-      </label>
+      <div className="input-field">
+        <label className="input-label">
+          Input
+        </label>
+        <input className="input" type="text" value={inputValue} onChange={handleChange} />
+      </div>
       <input className="submit" type="submit" value="Submit" />
     </form>
   );

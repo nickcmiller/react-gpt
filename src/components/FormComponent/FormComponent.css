@@ -7,7 +7,33 @@
   .input {
     margin-bottom: 10px;
   }
+
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-label {
+    margin-bottom: 5px;
+  }
   
   .submit {
     cursor: pointer;
+    background-color: #FFA500; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+  }
+  
+  .submit:hover {
+    background-color: #45a049;
   }
