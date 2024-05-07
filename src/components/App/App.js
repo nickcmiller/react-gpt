@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import './App.css';
 import FormComponent from '../FormComponent/FormComponent.js';
+import SideBar from '../SideBar/SideBar.js';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <SideBar />
         <header className="App-header">
+          
           <Routes>
             <Route path="/form" element={<FormComponent />} />
             <Route path="/" element={
